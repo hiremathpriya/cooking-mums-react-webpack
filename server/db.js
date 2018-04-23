@@ -10,7 +10,10 @@ module.exports = {
     console.log(user)
     console.log('db js config is ', config)
     console.log('db js connection is ', connection)
-    return connection('users').insert(user).returning('id').then((id) => {
+    
+    const userToInsert = {name: user.name, email: user.email};
+
+    return connection('users').insert(userToInsert).returning('id').then((id) => {
 
         console.log('db js the user added to db with id', id);
         return id;
