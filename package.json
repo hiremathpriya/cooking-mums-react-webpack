@@ -37,7 +37,7 @@
         "test": "jest --watchAll",
         "start": "node server",
         "knex": "knex",
-        "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+        "heroku-postbuild": "webpack -p --config ./webpack.js --progress"
     },
     "babel": {
         "presets": [
