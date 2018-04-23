@@ -1,0 +1,110 @@
+.header{
+  text-align: center;
+  background-color: rgb(223, 45, 45);
+}
+.footer {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  padding:20px;
+}
+
+.form {
+  
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.submit {
+  margin:15px;
+  padding: 10px;
+  background-color:rgb(180, 169, 169);
+  border-radius: 20%;
+  
+}
+
+
+.text {
+  margin: 15px;
+  padding:5px;
+  text-align-last: auto;
+}
+
+.customer-label {
+
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+.order-label {
+
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+}
+
+.order-header {
+  display: inline-block;
+  width: 200px;
+}
+
+.navlink {
+  margin: 10%;
+  padding: 10%;
+  display: inline-block;
+}
+
+
+
+ body {
+  /* background-image: url(/images/kitchen-wallpaper.jpg);  */
+   display: flex;
+   background-image: url(/images/background.jpg)
+}  
+
+
+.site-container {
+
+  
+  margin-left: 8vw;
+  margin-right: 10vw;
+  margin-top: 20px;
+  align-content: center;
+  border: 1px solid blue;
+   /* height: 100%; */
+  position: relative;
+  padding:10px;
+  background-color: white;
+}
+.message {
+  display: inline-block;
+  color:black;
+  font-size: 20px;
+  font-family: cursive;
+}
+.recipes {
+  display: inline-block;
+  font-size: 20px;
+  font-family: cursive;
+  padding:20px;
+  margin: 20px;
+
+}
+.container {
+  margin-top: 25px;
+}
+ul {
+  margin: 30px;
+  line-height: 45px;
+}
+
+.footer {
+  /* background-color: none !important; */
+  /* background-image: url(/images/background.jpg) */
+  width: 40vw;
+  margin-left: 30vw;
+}
+.navbar {
+  margin-top: 10px; 
+}
