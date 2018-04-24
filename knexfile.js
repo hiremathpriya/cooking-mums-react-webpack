@@ -1,5 +1,7 @@
 // Update with your config settings.
 
+const DB_URL = 'postgres://mnzajkxbxgejmf:00ab79a39f6e4b4dfef28f3fe3909cf027e3e43bfd8e1c254a74777886b34388@ec2-54-83-204-6.compute-1.amazonaws.com:5432/dlstbfbldq0f8?ssl=true'
+
 module.exports = {
 
   development: {
@@ -29,9 +31,9 @@ module.exports = {
   production: {
     client: 'pg',
     connection: {
-      database: 'postgres://mnzajkxbxgejmf:00ab79a39f6e4b4dfef28f3fe3909cf027e3e43bfd8e1c254a74777886b34388@ec2-54-83-204-6.compute-1.amazonaws.com:5432/dlstbfbldq0f8',
-      user:     'username',
-      password: 'password'
+      database: 'dlstbfbldq0f8',
+      user:     'mnzajkxbxgejmf',
+      password: '00ab79a39f6e4b4dfef28f3fe3909cf027e3e43bfd8e1c254a74777886b34388'
     },
     pool: {
       min: 2,
@@ -40,7 +42,8 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     },
-    debug: true
+    debug: true,
+    ssl: true
   }
 
 };
