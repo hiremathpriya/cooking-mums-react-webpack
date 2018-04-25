@@ -39,7 +39,7 @@
         "test": "jest --watchAll",
         "start": "node server",
         "knex": "knex",
-        "postinstall": "knex migrate:latest",
+        "postinstall": "knex migrate:latest && knex seed:run",
         "heroku-postbuild": "webpack -p --progress"
     },
     "babel": {
