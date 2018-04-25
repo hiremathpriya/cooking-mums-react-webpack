@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CoverFlow from 'coverflow-react';
+import { getImages } from '../api';
 import Header from './Header';
 
 import CateringOrder from './CateringOrder';
@@ -13,7 +14,7 @@ import AboutMe from './AboutMe';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 
-
+/*
 const imagesArr = [
   'images/0004.jpg',
   'images/0006.jpg',
@@ -71,17 +72,48 @@ const imagesArr = [
   'images/0135.jpg',
 
 ];
+*/
 
 class App extends Component {
+
   constructor(props) {
     super(props)
     this.state = {
-      imagesArr
+      imagesArr: []
     }
+
+    this.renderImages = this.renderImages.bind(this);
+    this.refreshImages = this.refreshImages.bind(this);
   }
+
+  renderImages(err, images) {
+
+    //console.log('inside app.js ', images)
+
+    const imagesForCoverFlow = images.map(image => {
+
+      return image.imgname
+    });
+
+    //console.log('passing to coverflow', imagesForCoverFlow);
+
+    this.setState({
+      imagesArr: imagesForCoverFlow
+    });
+  }
+
+  refreshImages() {
+    getImages(this.renderImages);
+  }
+
+  componentDidMount() {
+
+    this.refreshImages();
+  }
+
   render() {
 
-    console.log('images ' + imagesArr);
+    console.log('images ', this.state.imagesArr);
 
     return (
       <Router>
