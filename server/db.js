@@ -18,14 +18,16 @@ function saveUser (user) {
 
       console.log('db js the user added to db with id', id);
       return id;
-  });
+  }).catch(err => console.log('error saving user to db', err));
     
 }
 
 function getImages() {
   console.log('getting images from db in env ' + environment);
 
-  return connection('images').select();
+  return connection('images').select().catch((err) => {
+    console.log('error occured while getting images', err)
+  });
 }
   
   
