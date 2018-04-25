@@ -1,7 +1,13 @@
 import request from 'superagent'
 
-const registerURL = 'http://localhost:3000/api/v1/registrations'
-const imagesURL = 'http://localhost:3000/api/v1/images'
+const PORT = process.env.PORT || 3000
+const HOST = 'localhost'
+const HOST_URL = 'http://' + HOST + ':' + PORT;
+
+console.log('host url ' + HOST_URL)
+
+const registerURL = HOST_URL + '/api/v1/registrations'
+const imagesURL = HOST_URL + '/api/v1/images'
 
 // export function getWidgets (callback) {
 //   request
