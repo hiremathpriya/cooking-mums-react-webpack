@@ -9,13 +9,11 @@ const images = require('./routes/images')
 
 const server = express()
 
-/*
 const corsOptions = {
-    origin: 'http://localhost:8080',
+    origin: 'http://localhost:3000',
     credentials: true,
     methods: ['GET', 'POST', 'OPTIONS']
 }
-*/
 
 server.use(bodyParser.json())
 
