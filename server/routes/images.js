@@ -20,8 +20,10 @@ router.get('/', (req, res) => {
 
     getImages().then(imagesArr => {
 
+        console.log('images array ' + imagesArr)
+
         res.send({images: imagesArr});
-    });
+    }).catch(err => console.log('error while getting the images from db', err));;
 })
 
 module.exports = router
