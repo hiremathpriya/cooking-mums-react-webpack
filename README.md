@@ -1,15 +1,15 @@
 * README.me 
 
 
-###Learning objective for this MVP is to get comfortable with server side rendering and Data-base
- with using knex and sqlite3.
+## Learning objective for this MVP is to get comfortable with server side rendering and Data-base
+ ## with using knex and sqlite3.
 
 
-### My aim to create a website where user can choose the menu and send me the order from, and collect the registrations from people to show thier interest in my concept.
-##  Also learn to save data which will be  posted through the the order form.
+## My aim to create this webapp where user can choose the menu and send me the order from, and collect the registrations  ## from people to show thier interest in my concept.
+* Also learn to save data which will be  posted through the the order form.
 
 
-### User Stories.
+## User Stories.
 * As user I would like to see the header image and floating title on top of that. (As a strech I can have multiple images rolling behind which show bit of our culture and family/place)
 
 * As a user I should be able to see all the pictures of my dishes.
