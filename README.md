@@ -2,10 +2,10 @@
 
 
 ## Learning objective for this MVP is to get comfortable with server side rendering and Data-base
- ## with using knex and sqlite3.
+ * with using knex and sqlite3.
 
 
-## My aim to create this webapp where user can choose the menu and send me the order from, and collect the registrations  ## from people to show thier interest in my concept.
+* My aim to create this website where user can choose the menu and send me the order form, and collect the registrations   from people for thier interest in my concept.
 * Also learn to save data which will be  posted through the the order form.
 
 
