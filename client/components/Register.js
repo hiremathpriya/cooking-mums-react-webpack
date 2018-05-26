@@ -46,11 +46,12 @@ class Register extends Component {
 
         return (
             <div>
-                {this.state.responseText.length > 0 && <div name="responseText">{this.state.responseText}</div>}
+                
                 <form onSubmit={this.handleSubmit}>
                     <h2>Register</h2>
                     <div className="form">
                         <div className="container">
+                            {this.state.responseText.length > 0 && <div name="responseText">{this.state.responseText}</div>}
                             <div>
                                 <label id="label" className="register-label">
                                 Name:

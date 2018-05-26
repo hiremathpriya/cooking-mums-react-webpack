@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-// import pots from './0005.jpg';
+
 
 class Header extends Component {
   render() {
@@ -29,7 +29,7 @@ class Header extends Component {
                 </li>
               </ul>
             </div>  
-            {/* <img src={pots} className="Header-pots" alt="header" /> */}
+           
           </nav>
         </header>
         
